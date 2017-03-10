@@ -1,15 +1,26 @@
-* Faire un programme en CLI
-* Structurer son projet
-* Utiliser des modules
-* Gérer des arguments en CLI
-* Quelques tricks si on a le temps/j'ai la d'être
+# Session Live Coding 01
+
+*2017-03-10*
+
+### Resume
+
+Les differents points vus:
+
+* Faire un programme en CLI - *vu*
+* Structurer son projet - *vu*
+* Utiliser des modules - *vu*
+* Gérer des arguments en CLI - *pas vu*
+* Quelques tricks - *vu*
 
 ### Links
 
+- [How to Fork a project](https://guides.github.com/activities/forking/)
 - [Public APIs](https://github.com/abhishekbanthia/Public-APIs)
 - [Weather](http://wttr.in/)
+- [Get public IP](http://www.icanhazip.com)
 
-# TODO
+### TODO
+
 - [x] Heure
 - [x] IP
 - [x] Recuperer la meteo

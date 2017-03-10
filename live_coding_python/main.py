@@ -2,7 +2,6 @@
 # coding: utf-8
 import mymodule.functions
 import sys
-import os
 
 # Function Array
 FUNCS = {
@@ -24,6 +23,7 @@ def main():
     except KeyError:
         print("Unknown arg:", arg)
         sys.exit(2)
+
 
 if __name__ == "__main__":
     main()

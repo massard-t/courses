@@ -6,7 +6,6 @@ import datetime
 import socket
 import requests
 
-# TODO ADD Try/Catch
 
 def get_hour(arg=None):
     now = datetime.datetime.now()
@@ -15,25 +14,29 @@ def get_hour(arg=None):
     now_hour = now.hour
     now_minutes = now.minute
     now_seconds = now.second
-    print("%i/%i  %i:%i:%i" % (now_month, now_day, now_hour, now_minutes,
-        now_seconds))
+    print("%i/%i  %i:%i:%i" % (  # Changed indentation -> Lisibility
+        now_month,
+        now_day,
+        now_hour,
+        now_minutes,
+        now_seconds
+        )
+    )
 
 
 def get_ip(arg=None):
     local_ip = socket.gethostbyname(socket.gethostname())
     print("private ip:", local_ip)
-    public_ip = requests.get("http://www.icanhazip.com/")
+    public_ip = requests.get("http://www.icanhazip.com/")  # try/catch
     print("public ip: ", public_ip.text)
 
 
 def get_weather(arg=None):
-    response = requests.get("http://wttr.in/")
+    response = requests.get("http://wttr.in/")  # Should try/catch every req
     current_weather = response.text
     print(current_weather)
 
 
 def get_env(var_to_find=None):
-    variable_content = os.environ.get(var_to_find, 'Unknown')
+    variable_content = os.environ.get(var_to_find, 'ERROR: Unknown')
     print(var_to_find, ":", variable_content)
-
-
