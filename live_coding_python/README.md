@@ -9,8 +9,8 @@ Les differents points vus:
 * Faire un programme en CLI - *vu*
 * Structurer son projet - *vu*
 * Utiliser des modules - *vu*
-* Gérer des arguments en CLI - *pas vu*
 * Quelques tricks - *vu*
+* Gérer des arguments en CLI - *pas vu*
 
 ### Links
 
