@@ -1,5 +1,5 @@
-- [English](#English)
-- [French](#French)
+- [English](#english)
+- [French](#french)
 
 # English
 
