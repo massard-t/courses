@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 # coding: utf-8
+'''
+Functions for mymodule
+
+Made at school, for a Python course.
+'''
 # Module de gestion des commandes
 import os
 import datetime
@@ -7,7 +12,8 @@ import socket
 import requests
 
 
-def get_hour(arg=None):
+def get_hour(_=None):
+    'Prints the date.'
     now = datetime.datetime.now()
     now_month = now.month
     now_day = now.day
@@ -21,22 +27,29 @@ def get_hour(arg=None):
         now_minutes,
         now_seconds
         )
-    )
+         )
 
 
-def get_ip(arg=None):
+def get_ip(_=None):
+    '''
+    Gets local and public IP address
+    '''
     local_ip = socket.gethostbyname(socket.gethostname())
     print("private ip:", local_ip)
     public_ip = requests.get("http://www.icanhazip.com/")  # try/catch
     print("public ip: ", public_ip.text)
 
 
-def get_weather(arg=None):
+def get_weather(_=None):
+    '''Returns the weather for the actual location'''
     response = requests.get("http://wttr.in/")  # Should try/catch every req
     current_weather = response.text
     print(current_weather)
 
 
-def get_env(var_to_find=None):
-    variable_content = os.environ.get(var_to_find, 'ERROR: Unknown')
-    print(var_to_find, ":", variable_content)
+def get_env(arg=None):
+    '''
+    Prints an environment variable
+    '''
+    variable_content = os.environ.get(arg, 'ERROR: Unknown')
+    print(arg, ":", variable_content)
